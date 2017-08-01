@@ -15,12 +15,9 @@ public class Browser extends UiAutomatorTestCase {
 		
 		device.pressHome();
 		obj= new UiObject(new UiSelector().text("浏览器"));
-		try{
-			Thread.sleep(3000);
-		}catch(Exception e){
-			e.printStackTrace();
-		}
+		device.click(500, 500);
 		device.pressHome();		
+		
 	}
 
 }
