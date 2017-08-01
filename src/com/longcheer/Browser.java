@@ -17,7 +17,6 @@ public class Browser extends UiAutomatorTestCase {
 		obj= new UiObject(new UiSelector().text("浏览器"));
 		device.click(500, 500);
 		device.pressHome();		
-		
 	}
 
 }
