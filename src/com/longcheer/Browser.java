@@ -25,5 +25,19 @@ public class Browser extends UiAutomatorTestCase {
 		try{Thread.sleep(3000);}catch(Exception e){}
 		device.pressHome();		
 	}
+	
+	public void testDemo1() throws UiObjectNotFoundException{
+		
+		device.pressHome();
+		try{Thread.sleep(3000);}catch(Exception e){}
+		device.click(700, 1750);
+		try{Thread.sleep(3000);}catch(Exception e){}
+		device.pressHome();
+		try{Thread.sleep(3000);}catch(Exception e){}
+		obj= new UiObject(new UiSelector().text("浏览器"));
+		try{Thread.sleep(3000);}catch(Exception e){}
+
+	}
+	
 
 }
