@@ -45,8 +45,11 @@ public class SX {
 		
 	} 
 	
-	public static void deleteWithHand(String name){
+	public static void deleteWithHand(String name) throws UiObjectNotFoundException{
 		
+		new UiObject(new UiSelector().text(name)).dragTo(new UiObject(new UiSelector().text("卸载")), 30);
+		wait(2);
+		new UiObject(new UiSelector().text("卸载")).click();
 	}
 	
 }

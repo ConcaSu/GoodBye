@@ -11,8 +11,8 @@ public class Browser extends UiAutomatorTestCase {
 		UiDevice device = UiDevice.getInstance();
 		UiObject obj = null;
 		
-		public void testDemo(){
-			SX.clickInPackage("实用工具", "时钟");
+		public void testDemo() throws UiObjectNotFoundException{
+			SX.deleteWithHand("腾讯新闻");
 		}
 		
 }
