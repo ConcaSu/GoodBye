@@ -12,7 +12,7 @@ public class Browser extends UiAutomatorTestCase {
 		UiObject obj = null;
 		
 		public void testDemo() throws UiObjectNotFoundException{
-			SX.deleteWithHand("腾讯新闻");
+			SX.deleteWithHand("iQIYI");
 		}
 		
 }
