@@ -44,12 +44,5 @@ public class SX {
 		
 		
 	} 
-	
-	public static void deleteWithHand(String name) throws UiObjectNotFoundException{
-		
-		new UiObject(new UiSelector().text(name)).dragTo(new UiObject(new UiSelector().text("Uninstall")), 30);
-		wait(2);
-		new UiObject(new UiSelector().text("UNINSTALL")).click();
-	}
-	
+
 }
